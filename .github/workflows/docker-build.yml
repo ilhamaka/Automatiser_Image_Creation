@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
        # Étape 3 : Construire l'image Docker
       - name: Build the Docker image
-        run: docker build -t ilhamaka/app-flask-ci:latest .
+        run: docker build -t ilhamaka/hello_docker:latest .
        #Etape 4 : Pousser l'image Docker sur Docker Hub 
       - name:  Push the image to Docker Hub
-        run: docker push ilhamaka/app-flask-ci:latest
+        run: docker push ilhamaka/hello_docker:latest
