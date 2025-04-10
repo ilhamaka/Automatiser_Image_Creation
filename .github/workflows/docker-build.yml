@@ -2,7 +2,7 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [main] #declancher ce workflow sur chaque push vers la branch main
+    branches: [master] #declancher ce workflow sur chaque push vers la branch main
 
 jobs:
   build-and-push:
